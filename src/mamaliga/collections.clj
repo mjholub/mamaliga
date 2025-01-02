@@ -1,5 +1,6 @@
 (ns mamaliga.collections)
 
+;; FIXME: does not work properly for unconditional conjoining
 (defmacro conj-when 
   "Conditionally conjoins elements to a collection based on predicates.
    Takes a collection followed by pairs of pred-expr and value-expr.

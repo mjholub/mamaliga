@@ -41,6 +41,10 @@ The library generally follows these principles for error handling:
 - Transform functions return nil or empty collections for invalid input
 - Web utilities handle edge cases gracefully (e.g., missing parameters)
 
+## Important notes
+
+The `error` namespace assumes `clojure.tools.logging`'s log implementation usage.
+
 ### Contributing
 
 See CONTRIBUTING.md

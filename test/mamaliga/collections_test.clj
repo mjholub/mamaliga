@@ -13,8 +13,8 @@
     (is (= [:b 3] (conj-when [] true :b (pos? -1) 2 true 3))))
   (testing "unconditional conjoining (just the value with no predicate preceding)"
     (is (= [1 3] (conj-when [] 1 false 2 3))
-        "Should conjoin 1 and 3 when no predicate is provided")
-    (is (= ["bob" "alice"] (conj-when [] "bob" "alice"))
+        "Should conjoin strings when nil/no predicate is provided")
+    (is (= ["bob" "alice"] (conj-when [] nil "bob" nil "alice"))
         "Should conjoin strings when no predicate is provided"))
   (testing "empty vector"
     (is (= [] (conj-when [])))
